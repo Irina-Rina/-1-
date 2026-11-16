@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с обзорами фильмов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="27" fill="none" stroke="#FF9C07" stroke-width="6"/>
+                    <circle cx="30" cy="15" r="7" fill="#FF9C07"/>
+                    <circle cx="30" cy="45" r="7" fill="#FF9C07"/>
+                    <circle cx="15" cy="30" r="7" fill="#FF9C07"/>
+                    <circle cx="45" cy="30" r="7" fill="#FF9C07"/>
+                    <circle cx="30" cy="30" r="4" fill="#FF9C07"/>
+                </svg>
+                <div class="logo-text">Сайт с обзорами фильмов</div>
+            </div>
+            <div class="header-right">
+                <div class="auth-links" id="auth-buttons">
+                    <a href="#" id="btn-register">Регистрация</a>
+                    <a href="#" id="btn-login">Вход</a>
+                </div>
+                <div class="user-profile" id="user-profile" style="display: none;">
+                    <span id="user-greeting" class="greeting-text"><span class="greeting-prefix">Здравствуйте, </span><span id="user-name"></span></span>
+                    <a href="#" id="btn-logout" class="logout-link">Выход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <div class="title-row">
+            <h1 class="page-title">Топ 20 фильмов</h1>
+            <button class="btn-add-review" id="btn-add-review" type="button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="btn-text">Добавить обзор</span>
+            </button>
+        </div>
+        <div class="movies-grid">
+            <div class="movie-card">
+                <div class="poster poster-1"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Зеленая миля (1999)</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-2"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Список Шиндлера (1993)</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-3"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Побег из Шоушенка (1994)...</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-4"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Форрест Гамп (1994)...</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-5"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Властелин колец: Возвращение...</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-6"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Властелин колец: Братство Кольца...</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-7"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Властелин колец: Две крепости...</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-8"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">1+1 (2011)</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-9"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Интерстеллар (2014)...</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="poster poster-10"></div>
+                <div class="card-info">
+                    <h3 class="movie-title">Тайна Коко (2017)</h3>
+                    <p class="movie-date">Добавлено 15 августа</p>
+                    <button class="btn-details" type="button">Подробнее</button>
+                </div>
+            </div>
+        </div>
+        <button class="btn-show-more" id="btn-show-more" type="button">
+            <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Показать еще
+        </button>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-email">info@gmail.com</div>
+            <div class="footer-info">Информация о разработчике</div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" type="button">&times;</button>
+            <div class="modal-tabs">
+                <button class="tab-btn active" id="tab-register" type="button">Регистрация</button>
+                <button class="tab-btn" id="tab-login" type="button">Авторизация</button>
+            </div>
+            
+            <!-- ФОРМА РЕГИСТРАЦИИ -->
+            <form id="form-register" class="modal-form active" novalidate>
+                <div class="input-group full-width">
+                    <input type="text" id="reg-name" placeholder="Ваше имя" required>
+                    <span class="error-msg" id="error-reg-name"></span>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input type="email" id="reg-email" placeholder="Email" required>
+                        <span class="error-msg" id="error-reg-email"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="reg-phone" placeholder="Мобильный телефон" required>
+                     <span class="error-msg" id="error-reg-phone"></span>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input type="password" id="reg-password" placeholder="Пароль" required>
+                        <span class="error-msg" id="error-reg-password"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="reg-password-confirm" placeholder="Повторите пароль" required>
+                        <span class="error-msg" id="error-reg-password-confirm"></span>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="reg-agree" required>
+                    <label for="reg-agree">Согласен на обработку <a href="#">персональных данных</a></label>
+                    <span class="error-msg" id="error-reg-agree"></span>
+                </div>
+                <button type="submit" class="btn-submit" id="btn-submit-register" disabled>Зарегистрироваться</button>
+                <p class="form-note">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#585858" stroke-width="2"/>
+                        <path d="M12 8V12M12 16V16.01" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Все поля обязательны для заполнения
+                </p>
+            </form>
+            
+            <!-- ФОРМА АВТОРИЗАЦИИ (ПОЛЯ В РЯД) -->
+            <form id="form-login" class="modal-form" novalidate>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input type="email" id="login-email" placeholder="Email" required>
+                        <span class="error-msg" id="error-login-email"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="login-password" placeholder="Пароль" required>
+                        <span class="error-msg" id="error-login-password"></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit" id="btn-submit-login" disabled>Войти</button>
+                <p class="form-note">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#585858" stroke-width="2"/>
+                        <path d="M12 8V12M12 16V16.01" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Все поля обязательны для заполнения
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-add-review">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-add-close" type="button">&times;</button>
+            <div class="modal-tabs">
+                <button class="tab-btn active" type="button">Добавить обзор</button>
+            </div>
+            <form id="form-add-review" class="modal-form active" novalidate>
+                <div class="input-group full-width">
+                    <input type="text" id="review-title" placeholder="Название фильма" required>
+                    <span class="error-msg" id="error-review-title"></span>
+                </div>
+                <div class="input-group full-width">
+                    <input type="text" id="review-date" placeholder="Дата (например: 15 августа)" required>
+                    <span class="error-msg" id="error-review-date"></span>
+                </div>
+                <div class="input-group full-width">
+                    <input type="text" id="review-poster"placeholder="Постер: число от 1 до 10" required>
+                    <span class="error-msg" id="error-review-poster"></span>
+                </div>
+                <button type="submit" class="btn-submit" id="btn-submit-review">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
